@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  background: white;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaccfd;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+
+@layer components {
+
+  .button {
+    @apply text-[2.2vh] bg-gradient-to-b from-[#0891b2] to-[#334155] text-white font-bold py-[5px] px-[10px] rounded-[5px] h-[40px] w-[100px] flex items-center mr-2 justify-center;
+  }
+  .adderbutton {
+    @apply bg-gradient-to-b from-[#0891b2] to-[#334155] text-white border border-[#0891b2] px-8 py-2  m-5 rounded-sm;
+  }
+  .adderbuttonhover {
+    @apply bg-white text-[#0891b2] border border-[#0891b2] px-8 py-2 rounded-sm  m-5;
+  }
+  
+}
